@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+        Tell the browser what character encoding we want to use 
+        All modern browsers use UTF-8 as a standard, however we
+        keep this meta tag in the head as a 'best practice'
+    -->
+    <meta charset="UTF-8">
+    <!-- 
+        First introduced by Apple, his important tag ensures our website will 
+        render correctly on mobile
+
+        name="viewport": sets the type of the meta tag
+
+        content: what attribute/value the meta tag will be targeting
+
+        width=device-width: matches the screen's width in 'device-independent pixels' i.e. it matches
+        the browser/viewport width to that of the device
+
+        initial-scale=1.0: this sets the scale of the browser/viewport width. 1.0 is no scaling at all,
+        1.1 would be slightly 'zoomed' in and 0.9 slightly zoomed out
+
+        further info: https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariWebContent/UsingtheViewport/UsingtheViewport.html
+     -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 
+        Allows us to choose what version of IE the page should render as
+        Can choose from following options: IE="edge", IE="11", IE="EmulatIE11", IE="10" ... and so on
+        More info: https://stackoverflow.com/questions/6771258/what-does-meta-http-equiv-x-ua-compatible-content-ie-edge-do
+     -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <title>Travel Agency Landing Page</title>
+</head>
+<body>
+        <div class="main">
+            <!-- nav -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Travlr</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Footer</a>
+                    </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- hero -->
+            <div class="hero">
+                <p class="hero-cta-blurb">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ex amet ratione asperiores impedit, est molestiae provident beatae excepturi veniam, reiciendis pariatur odio. Quidem odio inventore perspiciatis quaerat vel quisquam.</p>
+                <button class="btn btn-primary hero-cta-button">Find out More</button>
+            </div>
+            <!-- content - section 1 -->
+            <div class="container">
+                <div class="row">
+                        <div class="col-sm-6 content-image content-image-one"></div>
+                        <div class="col-sm-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam est excepturi alias, dolor laboriosam ex quia saepe, minus, ducimus quibusdam similique expedita nostrum neque aspernatur laudantium sequi soluta corrupti esse.</div>
+                </div>
+            </div>
+            <!-- content - section 2 -->
+            <div class="container">
+                <div class="row">
+                        <div class="col-sm-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam est excepturi alias, dolor laboriosam ex quia saepe, minus, ducimus quibusdam similique expedita nostrum neque aspernatur laudantium sequi soluta corrupti esse.</div>
+                        <div class="col-sm-6 content-image content-image-two"></div>
+                </div>
+            </div>
+            <!-- footer -->
+            <div class="footer">
+                <footer>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <ul>
+                                    <li><a href="#">Bookings</a></li>
+                                    <li><a href="#">Enquiries</a></li>
+                                    <li><a href="#">Tickets</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-4">Magnam qui nostrum nobis nemo delectus nihil ratione voluptatum harum nulla, iure minima porro minus recusandae corporis assumenda inventore rem impedit. Dolore!</div>
+                            <div class="col-sm-4">Ipsa non, natus nulla ullam officiis alias voluptatem labore quos magni assumenda dolore placeat dolorum expedita neque maxime, ut, laudantium exercitationem iusto.</div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="./public/js/scripts.js"></script>
+</body>
+</html>
